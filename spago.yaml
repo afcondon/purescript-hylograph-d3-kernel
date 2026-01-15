@@ -1,0 +1,43 @@
+workspace:
+  packageSet:
+    registry: 67.0.1
+  extraPackages:
+    psd3-tree:
+      path: ../purescript-psd3-tree
+    psd3-graph:
+      path: ../purescript-psd3-graph
+    psd3-selection:
+      path: ../purescript-psd3-selection
+    psd3-simulation-core:
+      path: ../purescript-psd3-simulation-core
+
+package:
+  name: psd3-d3-kernel
+  description: D3.js force simulation kernel for PSD3
+  publish:
+    version: 0.1.0
+    license: MIT
+    location:
+      githubOwner: afcondon
+      githubRepo: purescript-psd3-d3-kernel
+  dependencies:
+    - arrays
+    - console
+    - effect
+    - foldable-traversable
+    - foreign-object
+    - functions
+    - integers
+    - maybe
+    - newtype
+    - nullable
+    - numbers
+    - ordered-collections
+    - partial
+    - prelude
+    - psd3-selection
+    - psd3-simulation-core
+    - refs
+    - tuples
+    - unsafe-coerce
+    - web-dom
