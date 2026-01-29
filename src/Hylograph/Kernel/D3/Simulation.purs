@@ -42,7 +42,7 @@
 -- |
 -- | The `updateGridXYAndReinit` function is the recommended way to animate
 -- | force-directed transitions as it handles this caching issue automatically.
-module PSD3.Kernel.D3.Simulation
+module Hylograph.Kernel.D3.Simulation
   ( -- * Node Types
     SimulationNode
   , NodeID
@@ -115,9 +115,9 @@ import Effect (Effect)
 import Type.Row (type (+))
 import Effect.Ref (Ref)
 import Effect.Ref as Ref
-import PSD3.Kernel.D3.Core as Core
-import PSD3.Kernel.D3.Types (ForceSpec(..), defaultSimParams)
-import PSD3.Kernel.D3.Events (SimulationCallbacks)
+import Hylograph.Kernel.D3.Core as Core
+import Hylograph.Kernel.D3.Types (ForceSpec(..), defaultSimParams)
+import Hylograph.Kernel.D3.Events (SimulationCallbacks)
 import Web.DOM.Element (Element)
 
 -- =============================================================================

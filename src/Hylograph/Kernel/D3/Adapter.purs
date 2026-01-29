@@ -5,8 +5,8 @@
 -- |
 -- | Usage:
 -- | ```purescript
--- | import PSD3.Kernel.D3.Adapter as D3Adapter
--- | import PSD3.Simulation.Core.Engine as Engine
+-- | import Hylograph.Kernel.D3.Adapter as D3Adapter
+-- | import Hylograph.Simulation.Core.Engine as Engine
 -- |
 -- | -- Create adapter from D3 simulation components
 -- | adapter <- D3Adapter.mkAdapter { nodes: nodesRef, forces: forcesRef, ... }
@@ -15,7 +15,7 @@
 -- | engine <- Engine.createEngine adapter
 -- | Engine.transitionTo myScene engine
 -- | ```
-module PSD3.Kernel.D3.Adapter
+module Hylograph.Kernel.D3.Adapter
   ( -- * Adapter Creation
     mkAdapter
     -- * Re-exports
@@ -31,9 +31,9 @@ import Effect (Effect)
 import Effect.Ref (Ref)
 import Effect.Ref as Ref
 import Foreign.Object as Object
-import PSD3.Kernel.D3.Core (ForceHandle) as Core
-import PSD3.Simulation.Core.Engine (EngineAdapter)
-import PSD3.Simulation.Core.Types (PositionMap, NodeRule)
+import Hylograph.Kernel.D3.Core (ForceHandle) as Core
+import Hylograph.Simulation.Core.Engine (EngineAdapter)
+import Hylograph.Simulation.Core.Types (PositionMap, NodeRule)
 
 -- | Minimal node requirements for the D3 adapter
 type MinimalNode r = { id :: Int, x :: Number, y :: Number | r }

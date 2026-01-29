@@ -11,7 +11,7 @@
 -- |
 -- | PERFORMANCE: Hot-path functions use FFI-backed O(1) Set/Map lookups
 -- | instead of O(n) array scans to handle 1000+ node graphs at 60fps.
-module PSD3.Kernel.D3.Links
+module Hylograph.Kernel.D3.Links
   ( -- * Swizzling (index → node reference)
     swizzleLinks
   , swizzleLinksByIndex

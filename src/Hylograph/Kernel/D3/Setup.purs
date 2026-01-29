@@ -23,7 +23,7 @@
 -- | -- Update: just call applySetup with new config
 -- | applySetup (mySetup # removeForce "charge") sim
 -- | ```
-module PSD3.Kernel.D3.Setup
+module Hylograph.Kernel.D3.Setup
   ( -- * Value Types (static or dynamic)
     Value(..)
   , static
@@ -96,8 +96,8 @@ import Data.Set as Set
 import Data.Tuple (Tuple(..))
 import Effect (Effect)
 import Effect.Ref as Ref
-import PSD3.Kernel.D3.Core as Core
-import PSD3.Kernel.D3.Simulation (Simulation, SimulationNode, NodeID)
+import Hylograph.Kernel.D3.Core as Core
+import Hylograph.Kernel.D3.Simulation (Simulation, SimulationNode, NodeID)
 
 -- =============================================================================
 -- Value Type (static or per-node dynamic)

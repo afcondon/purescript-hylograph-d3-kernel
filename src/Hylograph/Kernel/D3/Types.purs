@@ -2,7 +2,7 @@
 -- |
 -- | Type definitions for D3 force configurations.
 -- | These are D3-specific and not shared with other kernels.
-module PSD3.Kernel.D3.Types
+module Hylograph.Kernel.D3.Types
   ( -- * Node Types
     SimNode
     -- * Link Types

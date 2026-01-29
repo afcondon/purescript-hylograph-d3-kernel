@@ -2,24 +2,22 @@ workspace:
   packageSet:
     registry: 67.0.1
   extraPackages:
-    psd3-tree:
-      path: ../purescript-psd3-tree
-    psd3-graph:
-      path: ../purescript-psd3-graph
-    psd3-selection:
-      path: ../purescript-psd3-selection
-    psd3-simulation-core:
-      path: ../purescript-psd3-simulation-core
+    hylograph-graph:
+      path: ../purescript-hylograph-graph
+    hylograph-selection:
+      path: ../purescript-hylograph-selection
+    hylograph-simulation-core:
+      path: ../purescript-hylograph-simulation-core
 
 package:
-  name: psd3-d3-kernel
+  name: hylograph-d3-kernel
   description: D3.js force simulation kernel for PSD3
   publish:
     version: 0.1.0
     license: MIT
     location:
       githubOwner: afcondon
-      githubRepo: purescript-psd3-d3-kernel
+      githubRepo: purescript-hylograph-d3-kernel
   dependencies:
     - arrays
     - console
@@ -35,8 +33,8 @@ package:
     - ordered-collections
     - partial
     - prelude
-    - psd3-selection
-    - psd3-simulation-core
+    - hylograph-selection
+    - hylograph-simulation-core
     - refs
     - tuples
     - unsafe-coerce

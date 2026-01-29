@@ -5,7 +5,7 @@
 -- |
 -- | Key principle: Forces are just functions that mutate vx/vy on nodes.
 -- | We control when they run and how alpha decays.
-module PSD3.Kernel.D3.Core
+module Hylograph.Kernel.D3.Core
   ( -- * Force Handles (opaque)
     ForceHandle
     -- * Force Creation
@@ -55,7 +55,7 @@ import Prelude
 
 import Data.Traversable (for_)
 import Effect (Effect)
-import PSD3.Kernel.D3.Types (ManyBodyConfig, CollideConfig, LinkConfig, CenterConfig, ForceXConfig, ForceYConfig, RadialConfig, ManyBodyFilteredConfig, RadialFilteredConfig, CollideDynamicConfig, ForceXDynamicConfig, ForceYDynamicConfig, LinkDynamicConfig)
+import Hylograph.Kernel.D3.Types (ManyBodyConfig, CollideConfig, LinkConfig, CenterConfig, ForceXConfig, ForceYConfig, RadialConfig, ManyBodyFilteredConfig, RadialFilteredConfig, CollideDynamicConfig, ForceXDynamicConfig, ForceYDynamicConfig, LinkDynamicConfig)
 import Web.DOM.Element (Element)
 
 -- =============================================================================

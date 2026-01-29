@@ -7,7 +7,7 @@
 -- | 1. Callbacks are `Effect Unit` - no monadic overhead in hot path
 -- | 2. All callbacks are optional (stored in Refs, default to no-op)
 -- | 3. Event types are for documentation/Halogen integration, not for internal use
-module PSD3.Kernel.D3.Events
+module Hylograph.Kernel.D3.Events
   ( -- * Event Types (for Halogen integration)
     SimulationEvent(..)
     -- * Callback Configuration

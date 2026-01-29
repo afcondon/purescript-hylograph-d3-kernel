@@ -27,7 +27,7 @@
 -- | -- Pause simulation 2 while others continue
 -- | setSimActive 2 false group
 -- | ```
-module PSD3.Kernel.D3.SimulationGroup
+module Hylograph.Kernel.D3.SimulationGroup
   ( -- * Types
     SimulationGroup
   , GroupConfig
@@ -69,12 +69,12 @@ import Data.Tuple (Tuple(..))
 import Effect (Effect)
 import Effect.Ref (Ref)
 import Effect.Ref as Ref
-import PSD3.Kernel.D3.Core as Core
-import PSD3.Kernel.D3.Events (SimulationCallbacks, SimulationEvent(..), defaultCallbacks)
-import PSD3.Kernel.D3.Simulation (Simulation, SimulationNode, SimConfig, defaultConfig)
-import PSD3.Kernel.D3.Simulation as Sim
-import PSD3.Kernel.D3.Setup (Setup)
-import PSD3.Kernel.D3.Setup as Setup
+import Hylograph.Kernel.D3.Core as Core
+import Hylograph.Kernel.D3.Events (SimulationCallbacks, SimulationEvent(..), defaultCallbacks)
+import Hylograph.Kernel.D3.Simulation (Simulation, SimulationNode, SimConfig, defaultConfig)
+import Hylograph.Kernel.D3.Simulation as Sim
+import Hylograph.Kernel.D3.Setup (Setup)
+import Hylograph.Kernel.D3.Setup as Setup
 
 -- =============================================================================
 -- Types
