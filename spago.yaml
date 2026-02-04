@@ -1,13 +1,5 @@
 workspace:
-  packageSet:
-    registry: 72.0.1
-  extraPackages:
-    hylograph-graph:
-      path: ../purescript-hylograph-graph
-    hylograph-selection:
-      path: ../purescript-hylograph-selection
-    hylograph-simulation-core:
-      path: ../purescript-hylograph-simulation-core
+  extraPackages: {}
 
 package:
   name: hylograph-d3-kernel
@@ -19,23 +11,23 @@ package:
       githubOwner: afcondon
       githubRepo: purescript-hylograph-d3-kernel
   dependencies:
-    - arrays
-    - console
-    - effect
-    - foldable-traversable
-    - foreign-object
-    - functions
-    - integers
-    - maybe
-    - newtype
-    - nullable
-    - numbers
-    - ordered-collections
-    - partial
-    - prelude
-    - hylograph-selection
-    - hylograph-simulation-core
-    - refs
-    - tuples
-    - unsafe-coerce
-    - web-dom
+    - arrays: ">=7.3.0 <8.0.0"
+    - console: ">=6.1.0 <7.0.0"
+    - effect: ">=4.0.0 <5.0.0"
+    - foldable-traversable: ">=6.0.0 <7.0.0"
+    - foreign-object: ">=4.1.0 <5.0.0"
+    - functions: ">=6.0.0 <7.0.0"
+    - hylograph-selection: ">=0.1.1 <0.2.0"
+    - hylograph-simulation-core: ">=0.1.0 <0.2.0"
+    - integers: ">=6.0.0 <7.0.0"
+    - maybe: ">=6.0.0 <7.0.0"
+    - newtype: ">=5.0.0 <6.0.0"
+    - nullable: ">=6.0.0 <7.0.0"
+    - numbers: ">=9.0.1 <10.0.0"
+    - ordered-collections: ">=3.2.0 <4.0.0"
+    - partial: ">=4.0.0 <5.0.0"
+    - prelude: ">=6.0.2 <7.0.0"
+    - refs: ">=6.0.0 <7.0.0"
+    - tuples: ">=7.0.0 <8.0.0"
+    - unsafe-coerce: ">=6.0.0 <7.0.0"
+    - web-dom: ">=6.0.0 <7.0.0"
