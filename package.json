@@ -1,0 +1,17 @@
+{
+  "name": "purescript-hylograph-d3-kernel",
+  "version": "0.1.0",
+  "description": "Force kernel for Hylograph built on d3-force's force functions.",
+  "private": true,
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afcondon/purescript-hylograph-d3-kernel.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "d3-drag": "^3.0.0",
+    "d3-force": "^3.0.0",
+    "d3-selection": "^3.0.0"
+  }
+}
